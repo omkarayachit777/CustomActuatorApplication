@@ -23,7 +23,6 @@ mvnw
 mvnw.cmd
 .gitattributes
 
-
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
