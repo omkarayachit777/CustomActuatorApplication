@@ -1,0 +1,20 @@
+This project shows how a custom actuator endpoints are created
+
+NOTE - Read operation you can try in browser but for write and delete operation testing use POSTMAN..
+...............................................................................................
+* Read operation URL - GET -  http://localhost:8080/actuator/loadMyName
+
+* Write operation URL - POST - http://localhost:8080/actuator/loadMyName
+Request Body
+{
+    "name" : "John";
+}
+
+* Delete operation URL - DELETE - http://localhost:8080/actuator/loadMyName
+...............................................................................................
+Postman collection - Custom Actuator.postman_collection.json
+
+Only 3 are there as of 06 March 2026 (DeleteOperation, PostOperation, PostOperation)
+
+
+@copyright to omkar.ayachit777@gmail.com :)

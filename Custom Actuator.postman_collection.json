@@ -1,0 +1,229 @@
+{
+  "info": {
+    "_postman_id": "175fddf5-bc6d-490b-bcae-7289bcd742e1",
+    "name": "Custom Actuator",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "8770459"
+  },
+  "item": [
+    {
+      "name": "GET - Custom Endpoint",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/actuator/loadMyName",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "actuator",
+            "loadMyName"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "GET - Custom Endpoint with response",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/actuator/loadMyName",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "actuator",
+                "loadMyName"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/vnd.spring-boot.actuator.v3+json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "44"
+            },
+            {
+              "key": "Date",
+              "value": "Fri, 06 Mar 2026 13:17:53 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "Hello Omkar, This is your custom endpoint :)"
+        }
+      ]
+    },
+    {
+      "name": "POST - Custom Endpoint",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "POST - Custom Endpoint with response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\" : \"John\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/actuator/loadMyName",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "actuator",
+                "loadMyName"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/vnd.spring-boot.actuator.v3+json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "59"
+            },
+            {
+              "key": "Date",
+              "value": "Fri, 06 Mar 2026 13:17:36 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "Hello John, This is your custom endpoint of write operation"
+        }
+      ]
+    },
+    {
+      "name": "DELETE - Custom Endpoint",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/actuator/loadMyName",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "actuator",
+            "loadMyName"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "DELETE - Custom Endpoint with response",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/actuator/loadMyName",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "actuator",
+                "loadMyName"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/vnd.spring-boot.actuator.v3+json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "36"
+            },
+            {
+              "key": "Date",
+              "value": "Fri, 06 Mar 2026 13:22:07 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "Hello !!! you name will be deleted.."
+        }
+      ]
+    }
+  ]
+}
