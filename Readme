@@ -14,7 +14,7 @@ Request Body
 ...............................................................................................
 Postman collection - Custom Actuator.postman_collection.json
 
-Only 3 are there as of 06 March 2026 (DeleteOperation, PostOperation, PostOperation)
+Only 3 are there as of 06 March 2026 (DeleteOperation, ReadOperation, WriteOperation)
 
 
 @copyright to omkar.ayachit777@gmail.com :)
